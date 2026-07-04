@@ -309,29 +309,25 @@ Business growth trends
 
 ## Executive Overview
 
-> *(<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 37 PM" src="https://github.com/user-attachments/assets/128af99e-42f9-4f95-b940-9ed07bea6410" />)*
-
+> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 37 PM" src="https://github.com/user-attachments/assets/128af99e-42f9-4f95-b940-9ed07bea6410" />
 
 ---
 
 ## Furniture Deep Dive
 
-> *(<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 55 PM" src="https://github.com/user-attachments/assets/06af0933-547d-498b-a64d-dd8c156abd24" />)
-*
+> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 55 PM" src="https://github.com/user-attachments/assets/06af0933-547d-498b-a64d-dd8c156abd24" />
 
 ---
 
 ## Regional Analysis
 
-> *(<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 06 PM" src="https://github.com/user-attachments/assets/c0b203af-a5d0-4a02-97f4-50981ffb535e" />
-)*
+> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 06 PM" src="https://github.com/user-attachments/assets/c0b203af-a5d0-4a02-97f4-50981ffb535e" />
 
 ---
 
 ## Cohort Analysis
 
-> *(<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 15 PM" src="https://github.com/user-attachments/assets/8231913f-b277-4d63-9ef1-2753f669ecb9" />
-)*
+> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 15 PM" src="https://github.com/user-attachments/assets/8231913f-b277-4d63-9ef1-2753f669ecb9" />
 
 ---
 
