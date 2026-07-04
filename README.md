@@ -1,104 +1,103 @@
 # Retail Business Intelligence Dashboard
-### End-to-End Business Analytics & Customer Intelligence Project
+### End-to-End Business Analytics & Customer Intelligence Case Study
 
-> Transforming retail transaction data into actionable business insights using Python, Power BI, and customer analytics.
+> **From Assumptions to Insights:** Using Python and Power BI to investigate customer profitability, regional performance, pricing strategy, and business growth.
 
 ---
 
-# Project Overview
+# Dashboard Preview
 
-Business dashboards often explain **what happened**, but decision-makers need to understand **why it happened**.
+> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 37 PM" src="https://github.com/user-attachments/assets/136764e2-280d-42d9-bac6-46749e960a29" />
 
-This project analyzes a retail dataset to identify the key drivers of profitability, customer behavior, regional performance, and long-term business growth.
 
-The project combines **Python-based analytics** with an **interactive Power BI dashboard** to support data-driven business decisions.
+---
+
+# At a Glance
+
+| | |
+|-------------------------|--------------------------------|
+| **Industry** | Retail |
+| **Project Type** | Business Intelligence & Customer Analytics |
+| **Dataset** | Sample Superstore |
+| **Time Period** | 2014 – 2017 |
+| **Records** | 9,994 Orders |
+| **Customers** | 793 |
+| **Tools** | Python, Pandas, Matplotlib, Power BI, Jupyter Notebook, Git, GitHub |
 
 ---
 
 # Business Problem
 
-The company wanted to understand:
+The initial analysis suggested that the **Furniture category generated high sales but consistently low profitability**, raising an important business question:
 
-- Why is the Furniture category underperforming?
-- Which customer groups generate the highest profitability?
-- Why does the Central region perform worse than other regions?
-- Are discount strategies improving or hurting profitability?
-- Is the business actually declining over time?
+> **Should the Furniture category be discontinued, or was another factor driving the poor performance?**
+
+Rather than relying on transaction-level summaries, this project investigates the problem from a customer perspective to uncover the real drivers of profitability and recommend business strategies supported by data.
 
 ---
 
 # Project Objectives
 
-✔ Clean and validate retail transaction data
-
-✔ Perform exploratory data analysis (EDA)
-
-✔ Engineer customer-level analytical features
-
-✔ Investigate profitability drivers
-
-✔ Analyze customer purchasing behavior
-
-✔ Evaluate regional performance
-
-✔ Perform customer cohort analysis
-
-✔ Build an executive Power BI dashboard
-
-✔ Recommend business strategies backed by data
+- Clean and validate retail transaction data.
+- Perform exploratory data analysis (EDA).
+- Build a customer-level analytical dataset.
+- Investigate customer purchasing behaviour.
+- Analyze regional profitability.
+- Evaluate discount strategy.
+- Perform customer cohort analysis.
+- Build an executive Power BI dashboard.
+- Recommend data-driven business strategies.
 
 ---
 
-# Dataset
+# Project Workflow
 
-**Dataset:** Sample Superstore
-
-**Records:** ~9,994 Orders
-
-**Customers:** 793
-
-**Categories:** 3
-
-**Regions:** 4
-
-**Time Period:** 2014–2017
-
----
-
-# Tools & Technologies
-
-| Category | Tools |
-|----------|------|
-| Programming | Python |
-| Data Analysis | Pandas |
-| Visualization | Matplotlib |
-| Dashboard | Power BI |
-| Notebook | Jupyter Notebook |
-| Version Control | Git & GitHub |
+```text
+Raw Retail Dataset
+        │
+        ▼
+Data Cleaning & Validation
+        │
+        ▼
+Exploratory Data Analysis
+        │
+        ▼
+Customer Feature Engineering
+        │
+        ▼
+Customer Analytics
+        │
+        ▼
+Business Investigation
+        │
+        ▼
+Power BI Dashboard
+        │
+        ▼
+Strategic Recommendations
+```
 
 ---
 
 # Repository Structure
 
-```
+```text
 Retail-Business-Intelligence-Dashboard
-│
-├── charts/
-│
-├── dashboard/
-│   ├── screenshots/
-│   └── Superstore.pbix.pdf
 │
 ├── data/
 │   ├── Sample_Superstore.csv
 │   ├── customer_summary.csv
-│   └── customer_summary_final.csv
 │
 ├── notebooks/
 │   ├── 01_Data_Exploration_and_Preparation.ipynb
 │   └── 02_Customer_Analytics_and_Business_Investigation.ipynb
 │
-├── output/
+├── dashboard/
+│   ├── Superstore.pbix
+│   ├── Superstore_Dashboard.pdf
+│   └── screenshots/
+│
+├── charts/
 │
 ├── requirements.txt
 │
@@ -107,243 +106,128 @@ Retail-Business-Intelligence-Dashboard
 
 ---
 
-# Project Workflow
+# Business Questions Investigated
 
-```
-Raw Dataset
-      │
-      ▼
-Data Cleaning & Validation
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Feature Engineering
-(Customer Summary Dataset)
-      │
-      ▼
-Customer Analytics
-      │
-      ▼
-Business Investigation
-      │
-      ▼
-Power BI Dashboard
-      │
-      ▼
-Business Recommendations
-```
+- Is Furniture actually an unprofitable category?
+- Which customer groups generate the highest profitability?
+- Why is the Central region underperforming?
+- Does discounting improve customer value?
+- Is the business improving over time?
 
 ---
 
-# Exploratory Data Analysis
+# Key Findings
 
-The first notebook focuses on understanding the dataset before performing any business investigation.
+## 1. Customer behaviour drives profitability
 
-Topics covered include:
-
-- Data Quality Assessment
-- Missing Value Analysis
-- Duplicate Detection
-- Outlier Investigation
-- Sales Analysis
-- Profit Analysis
-- Regional Performance
-- Segment Performance
-- Category Analysis
-- Sub-Category Analysis
-- Customer-Level Dataset Creation
+Customer-level analysis showed that **multi-category customers generated substantially higher profits** than customers purchasing from a single category.
 
 ---
 
-# Customer Analytics
+## 2. Furniture was not the real problem
 
-The second notebook shifts from transaction-level analysis to customer-level business investigation.
+Although Furniture appeared unprofitable at the transaction level, deeper analysis revealed that losses were concentrated among **Furniture-only customers**.
 
-Major investigations include:
-
-### 1. Customer Profitability Analysis
-
-Identified differences in profitability across customer purchasing behaviors.
+Customers purchasing Furniture together with Technology or Office Supplies remained highly profitable.
 
 ---
 
-### 2. Multi-Category Customer Analysis
+## 3. Regional performance depends on customer mix
 
-Compared customers purchasing from one, two, and three product categories.
+The Central region underperformed despite offering higher discounts.
 
----
-
-### 3. Customer Group Analysis
-
-Grouped customers into:
-
-- Furniture Only
-- Furniture + Technology
-- Furniture + Office Supplies
-- All Three Categories
+Customer-level analysis suggested that pricing strategy and customer composition contributed more to weaker profitability than the Furniture category itself.
 
 ---
 
-### 4. First Purchase Analysis
+## 4. Business performance is improving
 
-Investigated which product category customers purchased first.
-
----
-
-### 5. Furniture Profitability Investigation
-
-Measured how Furniture contributes to overall customer profitability.
-
----
-
-### 6. Customer Churn Scenario
-
-Estimated the potential business impact of losing different customer groups using a hypothetical churn scenario.
-
----
-
-### 7. Discount Analysis
-
-Studied the relationship between discount levels and customer profitability.
-
----
-
-### 8. Regional Performance Analysis
-
-Compared profitability and discount strategies across regions.
-
----
-
-### 9. Customer Cohort Analysis
-
-Measured customer profitability based on acquisition year while correcting for observation bias.
-
----
-
-# Dashboard Pages
-
-## Executive Overview
-
-High-level KPIs
-
-Business assumptions
-
-Final conclusions
-
----
-
-## Furniture Deep Dive
-
-Customer group profitability
-
-Furniture contribution
-
-Customer behavior
-
----
-
-## Regional Analysis
-
-Regional profitability
-
-Average discounts
-
-Business recommendations
-
----
-
-## Cohort Analysis
-
-Customer acquisition cohorts
-
-Average profitability
-
-Business growth trends
-
----
-
-# Key Business Insights
-
-## Customer Behavior
-
-- Multi-category customers generated substantially higher profits than single-category customers.
-- Customer purchasing behavior proved to be a stronger profitability indicator than product category alone.
-
----
-
-## Furniture
-
-- Furniture was **not** the primary business problem.
-- Lower profitability was concentrated among customers purchasing Furniture without additional categories.
-- Tiered pricing is likely to be more effective than discontinuing the category.
-
----
-
-## Regional Performance
-
-- The Central region underperformed despite relatively high discount levels.
-- Findings suggest discount strategy contributed more to weaker profitability than product mix alone.
-
----
-
-## Business Growth
-
-- Initial yearly comparisons suggested declining performance.
-- After correcting for customer acquisition timing, cohort analysis indicated that newer customer cohorts generated higher average profitability.
+After controlling for customer observation periods, cohort analysis showed that newer customer cohorts generated stronger average profitability than earlier cohorts.
 
 ---
 
 # Business Recommendations
 
 - Encourage cross-category purchasing through bundles and cross-selling.
-- Introduce tiered pricing for standalone Furniture purchases while maintaining bundle discounts.
+- Implement tiered pricing for standalone Furniture purchases while maintaining bundle discounts.
 - Optimize discount strategy in the Central region.
-- Prioritize retention of high-value customer groups.
-- Continue monitoring cohort profitability to evaluate long-term business health.
+- Focus retention efforts on high-value multi-category customers.
 
 ---
 
-# Dashboard Preview
+# Power BI Dashboard
 
-## Executive Overview
+The interactive dashboard summarizes the analytical findings across four pages.
 
-> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 37 PM" src="https://github.com/user-attachments/assets/128af99e-42f9-4f95-b940-9ed07bea6410" />
+### Executive Overview
 
----
-
-## Furniture Deep Dive
-
-> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 55 PM" src="https://github.com/user-attachments/assets/06af0933-547d-498b-a64d-dd8c156abd24" />
+- Business KPIs
+- Executive summary
+- Key findings
 
 ---
 
-## Regional Analysis
+### Furniture Profitability Analysis
 
-> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 06 PM" src="https://github.com/user-attachments/assets/c0b203af-a5d0-4a02-97f4-50981ffb535e" />
-
----
-
-## Cohort Analysis
-
-> <img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 15 PM" src="https://github.com/user-attachments/assets/8231913f-b277-4d63-9ef1-2753f669ecb9" />
+- Customer profitability
+- Furniture contribution
+- Customer purchasing behaviour
 
 ---
 
-# Skills Demonstrated
+### Regional Performance Analysis
 
-- Business Analysis
+- Regional profitability
+- Discount comparison
+- Regional business insights
+
+---
+
+### Customer Behaviour & Cohort Analysis
+
+- Customer groups
+- Cohort performance
+- Business health trends
+
+---
+
+# Technical Skills Demonstrated
+
+### Business Analytics
+
+- Business Problem Solving
 - Customer Analytics
+- Pricing Strategy
+- Cohort Analysis
+- Business Recommendation Development
+
+### Data Analytics
+
 - Data Cleaning
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
 - Feature Engineering
+- Customer-Level Aggregation
 - Data Visualization
-- Business Intelligence
-- Power BI Dashboard Development
-- Python Programming
-- Business Storytelling
-- Analytical Thinking
+
+### Tools
+
+- Python
+- Pandas
+- Matplotlib
+- Power BI
+- Git
+- GitHub
+- Jupyter Notebook
+
+---
+
+# Key Deliverables
+
+- Customer-level analytical dataset
+- Two professional Jupyter notebooks
+- Interactive Power BI dashboard
+- Executive business recommendations
+- GitHub portfolio project
 
 ---
 
@@ -351,9 +235,39 @@ Business growth trends
 
 - Customer Lifetime Value (CLV)
 - Predictive Churn Modeling
+- Price Elasticity Analysis
 - RFM Segmentation
-- Price Optimization Models
-- Interactive What-if Pricing Dashboard
+- What-if Pricing Simulation
+
+---
+
+# Dashboard Preview
+
+## Executive Overview
+
+<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 37 PM" src="https://github.com/user-attachments/assets/0b422042-deaa-4b2a-a840-e297c76ed649" />
+
+
+---
+
+## Furniture Profitability Analysis
+
+<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 51 55 PM" src="https://github.com/user-attachments/assets/443d9933-7270-412b-aeeb-9f5b1a6e55a0" />
+
+
+---
+
+## Regional Performance Analysis
+
+<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 06 PM" src="https://github.com/user-attachments/assets/213ed85e-3533-43cf-88fb-e3f5cb3c0887" />
+
+
+---
+
+## Customer Behaviour & Cohort Analysis
+
+<img width="1148" height="654" alt="Screenshot 2026-07-04 at 3 52 15 PM" src="https://github.com/user-attachments/assets/f52bb3d8-09ec-4f3d-a686-468978111c05" />
+
 
 ---
 
@@ -363,11 +277,11 @@ Business growth trends
 
 Aspiring Business Analyst | Product Analyst | Data Analyst
 
-GitHub:
+**GitHub:**  
 https://github.com/vaishnavisingh095
 
-LinkedIn:
-https://www.linkedin.com/in/vaishnavisingh0
+**LinkedIn:**  
+https://www.linkedin.com/in/vaishnavisingh0/
 
 ---
 
